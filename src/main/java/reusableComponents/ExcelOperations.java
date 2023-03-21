@@ -17,9 +17,7 @@ public class ExcelOperations {
 	public ExcelOperations(String excelFile, String sheetName) {
 			
 		 try {
-			 //Vehicle_Make
 
-		//filePath = System.getProperty("user.dir")+PropertiesOperations.getPropertyValueByKey("testDataLocation");
 			filePath = System.getProperty("user.dir")+excelFile;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -42,8 +40,9 @@ public class ExcelOperations {
 	public HashMap<String, String> getTestDataInMap(int rowNum) throws Exception {
 				//read data row by row and put in map
 		HashMap<String, String> hm = new HashMap<String, String>();
-		
+		System.out.println("I am in getTestDataInMap");
 		for (int i = 0; i < sh.getRow(0).getLastCellNum(); i++) {
+			System.out.println("I am inside foor loop");
 			sh.getRow(rowNum).getCell(i).setCellType(CellType.STRING);
 			hm.put(sh.getRow(0).getCell(i).toString(), sh.getRow(rowNum).getCell(i).toString());
 		}	

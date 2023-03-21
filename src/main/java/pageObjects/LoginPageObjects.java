@@ -26,6 +26,14 @@ public class LoginPageObjects extends TestBase {
 	@FindBy(id = "proceed-link" )
 	WebElement Proceed;
 	
+	//On boarding
+	@FindBy(xpath="//button[text()=\"Onboarding\"]")
+	WebElement clickOnboarding;
+	
+	//On boarding - Institute
+	@FindBy(xpath="//a[text()=\"Institutions \"]")
+	WebElement clickInstitutions;
+	
 	
 	
 	//constructor - to use initElement method
@@ -33,13 +41,27 @@ public class LoginPageObjects extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	//for click on motorcycle link on homepage
+		//Navigating to Home page
+		public void homePage() throws InterruptedException {
+			System.out.println(driver);
+			Advanced.click();
+		    Proceed.click();	
+		    Thread.sleep(5000);
+		    
+		}
+	
+	//Navigating to to go to Home page and clicking on sign in
 	public void clickOnSignIn() throws InterruptedException {
-		System.out.println(driver);
-		Advanced.click();
-	    Proceed.click();	
-	    Thread.sleep(5000);
-	    sign_in.click();
-	    
+		this.homePage();	
+	    sign_in.click();	    
 	}
+	
+	//Navigating to Home Page and clicking on On boarding
+		public void clickOnOnboarding() throws InterruptedException {
+			System.out.println(driver);
+			this.homePage();	
+		    //On home page click on On boarding followed by institutions
+			clickOnboarding.click();
+			clickInstitutions.click();   
+		}
 }

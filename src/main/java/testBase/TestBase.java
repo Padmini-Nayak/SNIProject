@@ -11,13 +11,8 @@ import org.testng.annotations.BeforeMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.AllCredLoginPageObjects;
+import pageObjects.InstituteOnBoardingRegistrationPageObjects;
 import pageObjects.LoginPageObjects;
-import pageObjects.SelectPriceOptionsPageObjects;
-//import pageObjects.EnterInsurantDataPageObjects;
-//import pageObjects.EnterProductDataPageObjects;
-//import pageObjects.EnterVehicalDataPageObjects;
-//import pageObjects.HomePageObjects;
-//import pageObjects.SelectPriceOptionsPageObjects;
 import reusableComponents.PropertiesOperations;
 
 public class TestBase extends ObjectsRepo{
@@ -28,8 +23,6 @@ public class TestBase extends ObjectsRepo{
 		//read prop file and get browser and url
 		String browser = PropertiesOperations.getPropertyValueByKey("browser");
 		String url = PropertiesOperations.getPropertyValueByKey("url");
-		//String username = PropertiesOperations.getPropertyValueByKey("username");
-		//String password = PropertiesOperations.getPropertyValueByKey("passowrd");
 		
 		if(browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -52,8 +45,9 @@ public class TestBase extends ObjectsRepo{
 	@BeforeMethod   /// it will get execute before each test method within current class
 	public void setupMethod() throws Exception {
 		LaunchBrowserAndNavigate();
-	homepage = new LoginPageObjects();
-	allCredLogPage = new AllCredLoginPageObjects();
+		homepage = new LoginPageObjects();
+		allCredLogPage = new AllCredLoginPageObjects();
+		instOnboardRegistration = new InstituteOnBoardingRegistrationPageObjects();
 	}
 	
 	@AfterMethod
