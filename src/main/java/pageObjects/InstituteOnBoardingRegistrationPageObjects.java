@@ -1,10 +1,7 @@
 package pageObjects;
 
-import java.time.Duration;
 import java.util.HashMap;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -54,24 +51,24 @@ public class InstituteOnBoardingRegistrationPageObjects extends TestBase {
 		System.out.println(driver);
 		
 		// Start entering the registration page
-		instituteName.sendKeys(testData.get(CommonConstants.FULL_NAME).toString());
-		instituteMailId.sendKeys(testData.get(CommonConstants.EMAIL).toString());
-		instituteContactNumber.sendKeys(testData.get(CommonConstants.PHONE_NUMBER).toString());
-		instituteMailingAddress.sendKeys(testData.get(CommonConstants.MAILING_ADDRESS).toString());
+		instituteName.sendKeys(testData.get(CommonConstants.ONBOARD_INSTITUTE_FULL_NAME).toString());
+		instituteMailId.sendKeys(testData.get(CommonConstants.ONBOARD_INSTITUTE_EMAIL).toString());
+		instituteContactNumber.sendKeys(testData.get(CommonConstants.ONBOARD_INSTITUTE_PHONE_NUMBER).toString());
+		instituteMailingAddress.sendKeys(testData.get(CommonConstants.ONBOARD_INSTITUTE_MAILING_ADDRESS).toString());
 
 		// using CommonMethod class object to get the drop down element
-		commonMethods.selectDropdownOption(instituteStateElement, testData.get(CommonConstants.STATE).toString());
-		commonMethods.selectDropdownOption(instituteCityElement, testData.get(CommonConstants.CITY).toString());
+		commonMethods.selectDropdownOption(instituteStateElement, testData.get(CommonConstants.ONBOARD_INSTITUTE_STATE).toString());
+		commonMethods.selectDropdownOption(instituteCityElement, testData.get(CommonConstants.ONBOARD_INSTITUTE_CITY).toString());
 		
 		
-		commonMethods.selectFileUpLoad(instituteFileUpload, testData.get(CommonConstants.FILE_UPLOAD).toString(),driver);
+		commonMethods.selectFileUpLoad(instituteFileUpload, testData.get(CommonConstants.ONBOARD_INSTITUTE_FILE_UPLOAD).toString(),driver);
 		
 		Thread.sleep(5000);
-		institutePassword.sendKeys(testData.get(CommonConstants.PASSWORD_Institute).toString());
-		instituteConfirmPassword.sendKeys(testData.get(CommonConstants.CONFIRM_PASSWORD_Institute).toString());
+		institutePassword.sendKeys(testData.get(CommonConstants.ONBOARD_INSTITUTE_PASSWORD).toString());
+		instituteConfirmPassword.sendKeys(testData.get(CommonConstants.ONBOARD_INSTITUTE_CONFIRM_PASSWORD).toString());
 
-		System.out.println("The institute name is " + testData.get(CommonConstants.FULL_NAME).toString());
-		System.out.println("The institute email is " + testData.get(CommonConstants.EMAIL).toString());
+		System.out.println("The institute name is " + testData.get(CommonConstants.ONBOARD_INSTITUTE_FULL_NAME).toString());
+		System.out.println("The institute email is " + testData.get(CommonConstants.ONBOARD_INSTITUTE_EMAIL).toString());
 		
 		instituteRegister.click();
 

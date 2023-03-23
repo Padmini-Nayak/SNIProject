@@ -6,7 +6,7 @@
       <class name="AdminModuleTestCase.AllCredLoginPage_Test">
         <methods>
           <include name="setupMethod"/>
-          <include name="loginInstituteAfterOnboardRegistration"/>
+          <include name="loginInstituteAfterOnboardRegistration" invocation-numbers="4"/>
           <include name="cleanUp"/>
         </methods>
       </class> <!-- AdminModuleTestCase.AllCredLoginPage_Test -->
