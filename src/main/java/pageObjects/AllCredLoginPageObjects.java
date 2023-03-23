@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import reusableComponents.CommonConstants;
 import testBase.TestBase;
 
 public class AllCredLoginPageObjects extends TestBase {
@@ -31,11 +32,11 @@ public class AllCredLoginPageObjects extends TestBase {
    public String allCredLogin(HashMap<String, String> testData) throws Exception {
 			System.out.println(driver);
 			//LoginAs.click();
-			cm.selectDropdownOption(LoginAs, testData.get("Role").toString());
-			username.sendKeys(testData.get("username").toString());
-			password.sendKeys(testData.get("password").toString());
-			System.out.println("The user name is "+testData.get("username").toString());
-			System.out.println("The password is "+testData.get("password").toString());
+			commonMethods.selectDropdownOption(LoginAs, testData.get(CommonConstants.ROLE).toString());
+			username.sendKeys(testData.get(CommonConstants.USER_NAME).toString());
+			password.sendKeys(testData.get(CommonConstants.PASSWORD).toString());
+			System.out.println("The user name is "+testData.get(CommonConstants.USER_NAME).toString());
+			System.out.println("The password is "+testData.get(CommonConstants.PASSWORD).toString());
 			Login.click();
 			return driver.getTitle();
 		}

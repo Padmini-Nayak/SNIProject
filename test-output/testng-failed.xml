@@ -3,13 +3,13 @@
 <suite name="Failed suite [SNI Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="SNI Test(failed)">
     <classes>
-      <class name="AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test">
+      <class name="AdminModuleTestCase.AllCredLoginPage_Test">
         <methods>
           <include name="setupMethod"/>
-          <include name="instituteonBoardRegistration" invocation-numbers="0"/>
+          <include name="loginInstituteAfterOnboardRegistration"/>
           <include name="cleanUp"/>
         </methods>
-      </class> <!-- AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test -->
+      </class> <!-- AdminModuleTestCase.AllCredLoginPage_Test -->
     </classes>
   </test> <!-- SNI Test(failed) -->
 </suite> <!-- Failed suite [SNI Test Suite] -->

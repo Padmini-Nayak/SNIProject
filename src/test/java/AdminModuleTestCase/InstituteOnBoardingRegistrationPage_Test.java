@@ -12,12 +12,12 @@ public class InstituteOnBoardingRegistrationPage_Test extends TestBase {
 	
 	String fileName = "//src//test//resources//testData//InstituteOnBoardingRegistration_TestData.xlsx";
 	ExcelOperations excel = new ExcelOperations(fileName,"institute-onboard-registration");
-	
+
 	@Test (dataProvider = "instituteOnboardRegistration")
 	public void instituteonBoardRegistration(Object obj1) throws Exception {
 		HashMap<String, String> testData = (HashMap<String, String>) obj1;
 		
-		homepage.clickOnOnboarding();
+		homepage.clickOnOnboardingInstitue();
 		String title = instOnboardRegistration.instituteOnBoardingRegistration(testData);
 		System.out.println("The Title is:" + title);
 		
@@ -27,7 +27,6 @@ public class InstituteOnBoardingRegistrationPage_Test extends TestBase {
 	//Dataprovider method --> return object array
 	@DataProvider (name = "instituteOnboardRegistration")
 	public Object[][] testDataSupplier() throws Exception {
-		System.out.println("The row count is"+excel.getRowCount());
 		Object[][] obj = new Object[excel.getRowCount()][1];
 		for (int i = 1; i <= excel.getRowCount(); i++) {
 			HashMap<String, String> testData = excel.getTestDataInMap(i);

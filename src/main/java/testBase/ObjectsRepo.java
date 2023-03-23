@@ -6,7 +6,7 @@ import com.aventstack.extentreports.ExtentTest;
 import pageObjects.AllCredLoginPageObjects;
 import pageObjects.InstituteOnBoardingRegistrationPageObjects;
 import pageObjects.LoginPageObjects;
-//import pageObjects.SelectPriceOptionsPageObjects;
+import reusableComponents.CommonConstants;
 import reusableComponents.CommonMethods;
 
 public class ObjectsRepo {
@@ -17,5 +17,7 @@ public class ObjectsRepo {
 	public static LoginPageObjects homepage;
 	public static AllCredLoginPageObjects allCredLogPage;
 	public static InstituteOnBoardingRegistrationPageObjects instOnboardRegistration;
-	public CommonMethods cm = new CommonMethods();
+	public CommonMethods commonMethods = new CommonMethods();
+	
+	
 }
