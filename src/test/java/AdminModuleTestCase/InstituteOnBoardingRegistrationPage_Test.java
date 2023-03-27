@@ -15,6 +15,7 @@ public class InstituteOnBoardingRegistrationPage_Test extends TestBase {
 
 	@Test (dataProvider = "instituteOnboardRegistration")
 	public void instituteonBoardRegistration(Object obj1) throws Exception {
+		
 		HashMap<String, String> testData = (HashMap<String, String>) obj1;
 		
 		homepage.clickOnOnboardingInstitue();

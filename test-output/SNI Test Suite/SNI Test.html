@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SNI Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 23 20:19:34 IST 2023</td>
+<td>Started on:</td><td>Mon Mar 27 16:06:41 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>32 seconds (32387 ms)</td>
+<tr><td>Total time:</td><td>51 seconds (51544 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,102 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='AdminModuleTestCase.AllCredLoginPage_Test.loginInstituteAfterOnboardRegistration()'><b>loginInstituteAfterOnboardRegistration</b><br>Test class: AdminModuleTestCase.AllCredLoginPage_Test<br>Parameters: {Role=Institute, password=welcome123, TC Name=Verify Able to Login As Institute after Onboarding Registration, TC No=5, username=vedant.institute234@gmail.com}</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=111.0.5563.65)
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;PADMINI&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\shirv\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b09791902361f6555ea5091160d13f9
-*** Element info: {Using=xpath, value=//a[@class=&apos;sign-in-btn&apos;]}
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at pageObjects.LoginPageObjects.clickOnSignIn(LoginPageObjects.java:52)
-	at AdminModuleTestCase.AllCredLoginPage_Test.loginInstituteAfterOnboardRegistration(AllCredLoginPage_Test.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1065713160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1065713160'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=111.0.5563.65)
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;PADMINI&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\shirv\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b09791902361f6555ea5091160d13f9
-*** Element info: {Using=xpath, value=//a[@class=&apos;sign-in-btn&apos;]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at pageObjects.LoginPageObjects.clickOnSignIn(LoginPageObjects.java:52)
-	at AdminModuleTestCase.AllCredLoginPage_Test.loginInstituteAfterOnboardRegistration(AllCredLoginPage_Test.java:37)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>5</td>
-<td>AdminModuleTestCase.AllCredLoginPage_Test@3f053c80</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -173,28 +77,13 @@ Session ID: 9b09791902361f6555ea5091160d13f9
 <tr>
 <td title='AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test.instituteonBoardRegistration()'><b>instituteonBoardRegistration</b><br>Test class: AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test<br>Parameters: {Email=vedant.institute234@gmail.com, State=Karnataka, FullName=Vedant Institute, PhoneNumber=9876467898, MailingAddress=Udupi, City=Udupi, FileUpload=C:\Users\shirv\git\SNI-Automation-Project\src\test\resources\resources\Eq5I3BmVEAA0tj3.jpg, Password=welcome123, ConfirmPassword=welcome123}</td>
 <td></td>
-<td>15</td>
-<td>AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test@5316e95f</td></tr>
+<td>21</td>
+<td>AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test@1b065145</td></tr>
 <tr>
-<td title='AdminModuleTestCase.AllCredLoginPage_Test.loginInstituteAfterOnboardRegistration()'><b>loginInstituteAfterOnboardRegistration</b><br>Test class: AdminModuleTestCase.AllCredLoginPage_Test<br>Parameters: {Role=Admin, password=Admin123, TC Name=Verify able to login as Admin, TC No=1, username=hr@snipe.co.in}</td>
+<td title='AdminModuleTestCase.AllCredLoginPage_Test.loginInstituteAfterOnboardRegistration()'><b>loginInstituteAfterOnboardRegistration</b><br>Test class: AdminModuleTestCase.AllCredLoginPage_Test<br>Parameters: {UserName=Robert , Email=robert123@gmail.com, BioGraphy=test, Address=Karnataka, Role_Faculty=Faculty, Subject=Physics, ConfirmPassword=welcome123, Role=Institute, Occupation=Lecturer, password=welcome123, Username_Faculty=robert123@gmail.com, Password_Faculty=welcome123, PhoneNumber=9876456789, username=vedant.institute234@gmail.com, Password=welcome123}</td>
 <td></td>
-<td>0</td>
-<td>AdminModuleTestCase.AllCredLoginPage_Test@3f053c80</td></tr>
-<tr>
-<td title='AdminModuleTestCase.AllCredLoginPage_Test.loginInstituteAfterOnboardRegistration()'><b>loginInstituteAfterOnboardRegistration</b><br>Test class: AdminModuleTestCase.AllCredLoginPage_Test<br>Parameters: {Role=Institute, password=welcome@123, TC Name=Verify able to login as Institute, TC No=2, username=test2@gmail.com}</td>
-<td></td>
-<td>0</td>
-<td>AdminModuleTestCase.AllCredLoginPage_Test@3f053c80</td></tr>
-<tr>
-<td title='AdminModuleTestCase.AllCredLoginPage_Test.loginInstituteAfterOnboardRegistration()'><b>loginInstituteAfterOnboardRegistration</b><br>Test class: AdminModuleTestCase.AllCredLoginPage_Test<br>Parameters: {Role=Faculty, password=welcome@123, TC Name=Verify able to login as Faculty, TC No=3, username=test3@gmail.com}</td>
-<td></td>
-<td>0</td>
-<td>AdminModuleTestCase.AllCredLoginPage_Test@3f053c80</td></tr>
-<tr>
-<td title='AdminModuleTestCase.AllCredLoginPage_Test.loginInstituteAfterOnboardRegistration()'><b>loginInstituteAfterOnboardRegistration</b><br>Test class: AdminModuleTestCase.AllCredLoginPage_Test<br>Parameters: {Role=Student, password=welcome@123, TC Name=Verify able to login as Student, TC No=4, username=test1@gmail.com}</td>
-<td></td>
-<td>0</td>
-<td>AdminModuleTestCase.AllCredLoginPage_Test@3f053c80</td></tr>
+<td>24</td>
+<td>AdminModuleTestCase.AllCredLoginPage_Test@45cff11c</td></tr>
 </table><p>
 </body>
 </html>

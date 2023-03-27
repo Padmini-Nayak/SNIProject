@@ -1,9 +1,13 @@
 package pageObjects;
 
+import java.util.HashMap;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import reusableComponents.CommonConstants;
 import testBase.TestBase;
 
 public class LoginPageObjects extends TestBase {
@@ -31,6 +35,7 @@ public class LoginPageObjects extends TestBase {
 	// On boarding - Institute
 	@FindBy(xpath = "//a[text()=\"Institutions \"]")
 	WebElement clickInstitutions;
+	
 
 	// constructor - to use initElement method
 	public LoginPageObjects() {
@@ -47,10 +52,16 @@ public class LoginPageObjects extends TestBase {
 	}
 
 	// Navigating to to go to Home page and clicking on sign in
-	public void clickOnSignIn() throws InterruptedException {
+	public void navigateHomepage_clickOnSignIn() throws InterruptedException {
 		this.homePage();
 		sign_in.click();
 	}
+
+	// clicking on sign in
+	public void clickOnSignIn() throws InterruptedException {
+		sign_in.click();
+	}	
+	
 
 	// Navigating to Home Page and clicking on On boarding
 	public void clickOnOnboarding() throws InterruptedException {
@@ -68,4 +79,5 @@ public class LoginPageObjects extends TestBase {
 		clickOnboarding.click();
 		clickInstitutions.click();
 	}
+
 }

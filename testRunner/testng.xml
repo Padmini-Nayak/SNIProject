@@ -11,6 +11,8 @@
 					<exclude name="login" />
 				</methods>
 			</class>
+			<!--<class name="AdminModuleTestCase.InstituteDashBoardPage_Test" />
+			<class name="AdminModuleTestCase.InstituteFacultyPage_Test" />-->
 
 		</classes>
 	</test> <!-- Test -->

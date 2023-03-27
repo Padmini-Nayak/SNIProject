@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.AllCredLoginPageObjects;
+import pageObjects.InstituteDashBoardPageObjects;
+import pageObjects.InstituteFacultyPageObjects;
 import pageObjects.InstituteOnBoardingRegistrationPageObjects;
 import pageObjects.LoginPageObjects;
 import reusableComponents.PropertiesOperations;
@@ -48,10 +50,12 @@ public class TestBase extends ObjectsRepo{
 		homepage = new LoginPageObjects();
 		allCredLogPage = new AllCredLoginPageObjects();
 		instOnboardRegistration = new InstituteOnBoardingRegistrationPageObjects();
+		instituteDashBoard = new InstituteDashBoardPageObjects();
+		instituteFaculty =  new InstituteFacultyPageObjects();
 	}
 	
 	@AfterMethod
 	public void cleanUp() {
-		//driver.quit();
+		driver.close();
 	}
 }

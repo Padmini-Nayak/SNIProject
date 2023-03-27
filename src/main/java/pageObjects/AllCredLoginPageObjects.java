@@ -40,5 +40,19 @@ public class AllCredLoginPageObjects extends TestBase {
 			Login.click();
 			return driver.getTitle();
 		}
+   
+// log in with the data from excel
+	public String loginWithFacultyExcelData(HashMap<String, String> testData) throws Exception {
+		System.out.println(driver);
+		// LoginAs.click();
+		commonMethods.selectDropdownOption(LoginAs, testData.get(CommonConstants.ROLE_FACULTY).toString());
+		username.sendKeys(testData.get(CommonConstants.USER_NAME_FACULTY).toString());
+		password.sendKeys(testData.get(CommonConstants.PASSWORD_FACULTY).toString());
+		System.out.println("The user name is " + testData.get(CommonConstants.USER_NAME_FACULTY).toString());
+		System.out.println("The password is " + testData.get(CommonConstants.PASSWORD_FACULTY).toString());
+		Login.click();
+		
+		return driver.getTitle();
+	}
 	
 }

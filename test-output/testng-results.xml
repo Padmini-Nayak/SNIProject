@@ -1,187 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="7" passed="5" failed="1" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-23T20:19:34 IST" name="SNI Test Suite" finished-at="2023-03-23T20:20:06 IST" duration-ms="32387">
+  <suite started-at="2023-03-27T16:06:41 IST" name="SNI Test Suite" finished-at="2023-03-27T16:07:33 IST" duration-ms="51544">
     <groups>
     </groups>
-    <test started-at="2023-03-23T20:19:34 IST" name="SNI Test" finished-at="2023-03-23T20:20:06 IST" duration-ms="32387">
+    <test started-at="2023-03-27T16:06:41 IST" name="SNI Test" finished-at="2023-03-27T16:07:33 IST" duration-ms="51544">
       <class name="AdminModuleTestCase.AllCredLoginPage_Test">
-        <test-method is-config="true" signature="setupMethod()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:52 IST" name="setupMethod" finished-at="2023-03-23T20:19:54 IST" duration-ms="1687" status="PASS">
+        <test-method is-config="true" signature="setupMethod()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@45cff11c]" started-at="2023-03-27T16:07:07 IST" name="setupMethod" finished-at="2023-03-27T16:07:08 IST" duration-ms="1684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMethod -->
-        <test-method signature="loginInstituteAfterOnboardRegistration(java.lang.Object)[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:54 IST" name="loginInstituteAfterOnboardRegistration" data-provider="allLogin2" finished-at="2023-03-23T20:19:54 IST" duration-ms="3" status="PASS">
+        <test-method signature="loginInstituteAfterOnboardRegistration(java.lang.Object)[pri:1, instance:AdminModuleTestCase.AllCredLoginPage_Test@45cff11c]" started-at="2023-03-27T16:07:08 IST" name="loginInstituteAfterOnboardRegistration" data-provider="onboardNewInstitute" finished-at="2023-03-27T16:07:33 IST" duration-ms="24221" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Role=Admin, password=Admin123, TC Name=Verify able to login as Admin, TC No=1, username=hr@snipe.co.in}]]>
+                <![CDATA[{UserName=Robert , Email=robert123@gmail.com, BioGraphy=test, Address=Karnataka, Role_Faculty=Faculty, Subject=Physics, ConfirmPassword=welcome123, Role=Institute, Occupation=Lecturer, password=welcome123, Username_Faculty=robert123@gmail.com, Password_Faculty=welcome123, PhoneNumber=9876456789, username=vedant.institute234@gmail.com, Password=welcome123}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInstituteAfterOnboardRegistration -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:54 IST" name="cleanUp" finished-at="2023-03-23T20:19:54 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setupMethod()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:54 IST" name="setupMethod" finished-at="2023-03-23T20:19:55 IST" duration-ms="1722" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method signature="loginInstituteAfterOnboardRegistration(java.lang.Object)[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:55 IST" name="loginInstituteAfterOnboardRegistration" data-provider="allLogin2" finished-at="2023-03-23T20:19:55 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Role=Institute, password=welcome@123, TC Name=Verify able to login as Institute, TC No=2, username=test2@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginInstituteAfterOnboardRegistration -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:55 IST" name="cleanUp" finished-at="2023-03-23T20:19:55 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setupMethod()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:55 IST" name="setupMethod" finished-at="2023-03-23T20:19:57 IST" duration-ms="1988" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method signature="loginInstituteAfterOnboardRegistration(java.lang.Object)[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:57 IST" name="loginInstituteAfterOnboardRegistration" data-provider="allLogin2" finished-at="2023-03-23T20:19:57 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Role=Faculty, password=welcome@123, TC Name=Verify able to login as Faculty, TC No=3, username=test3@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginInstituteAfterOnboardRegistration -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:57 IST" name="cleanUp" finished-at="2023-03-23T20:19:57 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setupMethod()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:57 IST" name="setupMethod" finished-at="2023-03-23T20:19:59 IST" duration-ms="1760" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method signature="loginInstituteAfterOnboardRegistration(java.lang.Object)[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:59 IST" name="loginInstituteAfterOnboardRegistration" data-provider="allLogin2" finished-at="2023-03-23T20:19:59 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Role=Student, password=welcome@123, TC Name=Verify able to login as Student, TC No=4, username=test1@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginInstituteAfterOnboardRegistration -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:59 IST" name="cleanUp" finished-at="2023-03-23T20:19:59 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setupMethod()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:19:59 IST" name="setupMethod" finished-at="2023-03-23T20:20:01 IST" duration-ms="1782" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method signature="loginInstituteAfterOnboardRegistration(java.lang.Object)[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:20:01 IST" name="loginInstituteAfterOnboardRegistration" data-provider="allLogin2" finished-at="2023-03-23T20:20:06 IST" duration-ms="5199" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Role=Institute, password=welcome123, TC Name=Verify Able to Login As Institute after Onboarding Registration, TC No=5, username=vedant.institute234@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=111.0.5563.65)
-Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
-System info: host: 'PADMINI', ip: '192.168.0.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\shirv\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b09791902361f6555ea5091160d13f9
-*** Element info: {Using=xpath, value=//a[@class='sign-in-btn']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=111.0.5563.65)
-Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
-System info: host: 'PADMINI', ip: '192.168.0.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\shirv\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b09791902361f6555ea5091160d13f9
-*** Element info: {Using=xpath, value=//a[@class='sign-in-btn']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at pageObjects.LoginPageObjects.clickOnSignIn(LoginPageObjects.java:52)
-at AdminModuleTestCase.AllCredLoginPage_Test.loginInstituteAfterOnboardRegistration(AllCredLoginPage_Test.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginInstituteAfterOnboardRegistration -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@3f053c80]" started-at="2023-03-23T20:20:06 IST" name="cleanUp" finished-at="2023-03-23T20:20:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:AdminModuleTestCase.AllCredLoginPage_Test@45cff11c]" started-at="2023-03-27T16:07:33 IST" name="cleanUp" finished-at="2023-03-27T16:07:33 IST" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
       </class> <!-- AdminModuleTestCase.AllCredLoginPage_Test -->
       <class name="AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test">
-        <test-method is-config="true" signature="setupMethod()[pri:0, instance:AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test@5316e95f]" started-at="2023-03-23T20:19:34 IST" name="setupMethod" finished-at="2023-03-23T20:19:37 IST" duration-ms="2889" status="PASS">
+        <test-method is-config="true" signature="setupMethod()[pri:0, instance:AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test@1b065145]" started-at="2023-03-27T16:06:41 IST" name="setupMethod" finished-at="2023-03-27T16:06:45 IST" duration-ms="3808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMethod -->
-        <test-method signature="instituteonBoardRegistration(java.lang.Object)[pri:0, instance:AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test@5316e95f]" started-at="2023-03-23T20:19:37 IST" name="instituteonBoardRegistration" data-provider="instituteOnboardRegistration" finished-at="2023-03-23T20:19:52 IST" duration-ms="15260" status="PASS">
+        <test-method signature="instituteonBoardRegistration(java.lang.Object)[pri:0, instance:AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test@1b065145]" started-at="2023-03-27T16:06:45 IST" name="instituteonBoardRegistration" data-provider="instituteOnboardRegistration" finished-at="2023-03-27T16:07:07 IST" duration-ms="21488" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -192,7 +43,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instituteonBoardRegistration -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test@5316e95f]" started-at="2023-03-23T20:19:52 IST" name="cleanUp" finished-at="2023-03-23T20:19:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test@1b065145]" started-at="2023-03-27T16:07:07 IST" name="cleanUp" finished-at="2023-03-27T16:07:07 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
