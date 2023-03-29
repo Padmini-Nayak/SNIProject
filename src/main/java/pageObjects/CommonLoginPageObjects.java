@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import reusableComponents.CommonConstants;
 import testBase.TestBase;
 
-public class AllCredLoginPageObjects extends TestBase {
+public class CommonLoginPageObjects extends TestBase {
 	
 	@FindBy(name = "LoginAs")
 	WebElement LoginAs;
@@ -24,16 +24,21 @@ public class AllCredLoginPageObjects extends TestBase {
 	WebElement Login;
 	
 	//constructor - to use initElement method
-		public AllCredLoginPageObjects() {
+		public CommonLoginPageObjects() {
 			PageFactory.initElements(driver, this);
 		}
 		
 	//For logging in to the SNI application with different roles
-   public String allCredLogin(HashMap<String, String> testData) throws Exception {
+   public String logIn(HashMap<String, String> testData) throws Exception {
 			System.out.println(driver);
 			//LoginAs.click();
 			commonMethods.selectDropdownOption(LoginAs, testData.get(CommonConstants.ROLE).toString());
-			username.sendKeys(testData.get(CommonConstants.USER_NAME).toString());
+			//username.sendKeys(testData.get(CommonConstants.USER_NAME).toString());
+			
+			
+			//Purposely creating failure to capture the screenshot
+			username.sendKeys(testData.get("Padmini").toString());
+			
 			password.sendKeys(testData.get(CommonConstants.PASSWORD).toString());
 			System.out.println("The user name is "+testData.get(CommonConstants.USER_NAME).toString());
 			System.out.println("The password is "+testData.get(CommonConstants.PASSWORD).toString());

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import reusableComponents.CommonConstants;
 import testBase.TestBase;
 
-public class LoginPageObjects extends TestBase {
+public class HomePageObjects extends TestBase {
 	// only page objects + respective methods
 
 	@FindBy(xpath = "//a[@class='sign-in-btn']")
@@ -38,7 +38,7 @@ public class LoginPageObjects extends TestBase {
 	
 
 	// constructor - to use initElement method
-	public LoginPageObjects() {
+	public HomePageObjects() {
 		PageFactory.initElements(driver, this);
 	}
 

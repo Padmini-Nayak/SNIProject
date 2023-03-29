@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AdminModuleTestCase.InstituteDashBoardPage_Test">
+      <class name="AdminModuleTestCase.CommonLoginPage_Test">
         <methods>
           <include name="setupMethod"/>
-          <include name="clickInstituteDashBoardFaculty"/>
+          <include name="login" invocation-numbers="0 1 2 3 4"/>
           <include name="cleanUp"/>
         </methods>
-      </class> <!-- AdminModuleTestCase.InstituteDashBoardPage_Test -->
+      </class> <!-- AdminModuleTestCase.CommonLoginPage_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

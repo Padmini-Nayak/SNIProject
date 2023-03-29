@@ -5,14 +5,17 @@ import java.util.HashMap;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import listeners.CustomListener;
 import reusableComponents.CommonConstants;
 import reusableComponents.ExcelOperations;
 import testBase.ObjectsRepo;
 import testBase.TestBase;
 
-public class AllCredLoginPage_Test extends TestBase {
+@Listeners(CustomListener.class)
+public class CommonLoginPage_Test extends TestBase {
 
 	String fileName = "//src//test//resources//testData//AllCredsLogins_TestData.xlsx";
 
@@ -28,7 +31,7 @@ public class AllCredLoginPage_Test extends TestBase {
 		HashMap<String, String> testData = (HashMap<String, String>) obj1;
 
 		homepage.navigateHomepage_clickOnSignIn();
-		String title = allCredLogPage.allCredLogin(testData);
+		String title = loginPage.logIn(testData);
 		System.out.println("The Title is:" + title);
 		WebElement logout = driver.findElement(By.partialLinkText("Log-Out"));
 		logout.click();
@@ -42,7 +45,7 @@ public class AllCredLoginPage_Test extends TestBase {
 		homepage.navigateHomepage_clickOnSignIn();
 
 		// Log in as institute registered by Onaboarding
-		String title = allCredLogPage.allCredLogin(testData);
+		String title = loginPage.logIn(testData);
 		System.out.println("The Title is:" + title);
 
 		// After logging in click on 'Faculty' form the side navigation bar
@@ -51,16 +54,14 @@ public class AllCredLoginPage_Test extends TestBase {
 		// Click on 'Create New faculty' button and enter the data to create a new
 		// Faculty.
 		String title2 = instituteFaculty.createInstituteFaculty(testData);
-		System.out.println("The Ttitle is " + title2);
 		Thread.sleep(3000);
-		System.out.println("Before log out");
 		// Logout
 		instituteDashBoard.clickOnLogOut();
 		System.out.println("Before after out");
 		// Sign in again with the created faculty
 		homepage.clickOnSignIn();
 
-		String title_Faculty = allCredLogPage.loginWithFacultyExcelData(testData);
+		String title_Faculty = loginPage.loginWithFacultyExcelData(testData);
 		Thread.sleep(3000);
 	}
 
