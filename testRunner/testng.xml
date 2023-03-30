@@ -3,16 +3,15 @@
 <suite name="SNI Test Suite">
 	<test name="SNI Test">
 		<classes>
-			<class name="AdminModuleTestCase.InstituteOnBoardingRegistrationPage_Test" />
 
-			<class name="AdminModuleTestCase.AllCredLoginPage_Test">
+
+			<class name="testPages.FacultyLogInThroughInstitute_Onboarding_Page_Test">
 				<methods>
 					<include name="loginInstituteAfterOnboardRegistration" />
 					<exclude name="login" />
 				</methods>
 			</class>
-			<!--<class name="AdminModuleTestCase.InstituteDashBoardPage_Test" />
-			<class name="AdminModuleTestCase.InstituteFacultyPage_Test" />-->
+
 
 		</classes>
 	</test> <!-- Test -->

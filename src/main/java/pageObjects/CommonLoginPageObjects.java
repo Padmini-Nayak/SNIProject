@@ -33,11 +33,11 @@ public class CommonLoginPageObjects extends TestBase {
 			System.out.println(driver);
 			//LoginAs.click();
 			commonMethods.selectDropdownOption(LoginAs, testData.get(CommonConstants.ROLE).toString());
-			//username.sendKeys(testData.get(CommonConstants.USER_NAME).toString());
+			username.sendKeys(testData.get(CommonConstants.USER_NAME).toString());
 			
 			
 			//Purposely creating failure to capture the screenshot
-			username.sendKeys(testData.get("Padmini").toString());
+			//username.sendKeys(testData.get("Padmini").toString());
 			
 			password.sendKeys(testData.get(CommonConstants.PASSWORD).toString());
 			System.out.println("The user name is "+testData.get(CommonConstants.USER_NAME).toString());

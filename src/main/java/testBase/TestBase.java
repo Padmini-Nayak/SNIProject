@@ -51,7 +51,7 @@ public class TestBase extends ObjectsRepo{
 		loginPage = new CommonLoginPageObjects();
 		instOnboardRegistration = new InstituteOnBoardingRegistrationPageObjects();
 		instituteDashBoard = new InstituteDashBoardPageObjects();
-		instituteFaculty =  new InstituteFacultyPageObjects();
+		instituteFaculty = new InstituteFacultyPageObjects();
 	}
 	
 	@AfterMethod
